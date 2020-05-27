@@ -19,10 +19,11 @@ def nyc_pigeon_organizer(data)
         
     
         if(key == :color)
-          new_hash[name][:color] << key
+          new_hash[name][:color] << key.to_s
           elsif(key == :gender)
-          
+          new_hash[name][:gender] << key.to_s
           elsif(key==:lives)
+          new_hash[name][:lives] << key.to_s
           end
           
           
@@ -31,6 +32,8 @@ def nyc_pigeon_organizer(data)
       end
     end
   end
+  
+  new_hash
   
 end
 
