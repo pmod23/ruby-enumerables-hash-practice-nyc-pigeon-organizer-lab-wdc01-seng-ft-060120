@@ -25,10 +25,7 @@ def nyc_pigeon_organizer(data)
           elsif(key==:lives)
           new_hash[name][:lives] << k.to_s
           end
-          
-          
-      
-      
+         
       end
     end
   end
