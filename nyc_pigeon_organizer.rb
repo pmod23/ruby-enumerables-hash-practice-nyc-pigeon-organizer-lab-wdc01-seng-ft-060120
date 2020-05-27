@@ -13,7 +13,24 @@ def nyc_pigeon_organizer(data)
       end
     end
   end
-  
+   data.each do |key, value|
+    value.each do |k, v|
+      v.each do |name|
+        
+    
+        if(key == :color)
+          new_hash[name][:color] << key
+          elsif(key == :gender)
+          
+          elsif(key==:lives)
+          end
+          
+          
+      
+      
+      end
+    end
+  end
   
 end
 
